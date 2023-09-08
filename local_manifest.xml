@@ -22,6 +22,10 @@
     <!-- Hardware -->
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="ArrowOS-Devices" />
 
+    <!-- Prebuilts -->
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="mvaisakh/gcc-arm64" clone-depth="1" remote="github" revision="gcc-master" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="mvaisakh/gcc-arm" clone-depth="1" remote="github" revision="gcc-master" />
+
     <!-- Vendor -->
     <project path="vendor/certs" name="android_vendor_certs" remote="personal" />
     <project path="vendor/extra" name="android_vendor_extra" remote="personal" />
