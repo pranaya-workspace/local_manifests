@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="workspace"
+            fetch="https://github.com/pranaya-workspace"
+            pushurl="ssh://git@github.com/pranaya-workspace"
+            revision="udc" />
+
+    <remote name="priv"
+            fetch="ssh://git@github.com/pranayadmn"
+            revision="main" />
+
+    <remote name="blobs"
+            fetch="https://codeberg.org/pranayadmn"
+            pushurl="ssh://git@codeberg.org/pranayadmn"
+            revision="udc" />
+
+    <remote name="lineage"
+            fetch="https://github.com/LineageOS"
+            review="https://review.lineageos.org"
+            revision="lineage-21.0" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/yunluo" name="android_device_xiaomi_yunluo" remote="workspace" />
+    <project path="device/xiaomi/yunluo-kernel" name="android_device_xiaomi_yunluo-kernel" remote="workspace" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="workspace" />
+
+    <!-- Hardware -->
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="workspace" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="workspace" />
+
+    <!-- Prebuilts -->
+    <remove-project name="android_prebuilts_extract-tools" />
+    <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="lineage" />
+
+    <!-- Tools -->
+    <remove-project name="android_tools_extract-utils" />
+    <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
+
+    <!-- Vendor -->
+    <project path="vendor/certs" name="android_vendor_certs" remote="priv" />
+    <project path="vendor/extra" name="android_vendor_extra" remote="priv" />
+    <project path="vendor/xiaomi/yunluo" name="proprietary_vendor_xiaomi_yunluo" remote="blobs" />
+</manifest>
