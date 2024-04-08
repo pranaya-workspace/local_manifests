@@ -25,6 +25,10 @@
     <project path="device/xiaomi/yunluo-kernel" name="android_device_xiaomi_yunluo-kernel" remote="workspace" />
     <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="workspace" />
 
+    <!-- External -->
+    <remove-project name="platform/external/libcxx" />
+    <project path="external/libcxx" name="android_external_libcxx" remote="lineage" />
+
     <!-- Hardware -->
     <project path="hardware/mediatek" name="android_hardware_mediatek" remote="workspace" />
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="workspace" />
