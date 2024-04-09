@@ -39,7 +39,7 @@
 
     <!-- Tools -->
     <remove-project name="android_tools_extract-utils" />
-    <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
+    <project path="tools/extract-utils" name="android_tools_extract-utils" remote="workspace" />
 
     <!-- Vendor -->
     <project path="vendor/certs" name="android_vendor_certs" remote="priv" />
