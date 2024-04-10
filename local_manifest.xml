@@ -48,5 +48,6 @@
     <!-- Vendor -->
     <project path="vendor/certs" name="android_vendor_certs" remote="priv" />
     <project path="vendor/extra" name="android_vendor_extra" remote="priv" />
+    <project path="vendor/gms" name="SamarV-121/proprietary_vendor_gms" remote="github" revision="android-14.0" />
     <project path="vendor/xiaomi/yunluo" name="proprietary_vendor_xiaomi_yunluo" remote="blobs" />
 </manifest>
