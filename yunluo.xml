@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="priv"
+            fetch="ssh://git@github.com/anayw2001"
+            revision="master" />
+
+    <!-- ものを削除 -->
+    <remove-project name="android_vendor_statix-prebuilts" />
+    <remove-project name="StatiXOS/google-mobile-services" />
+
+    <!-- Device -->
+    <project path="device/xiaomi/yunluo" name="android_device_xiaomi_yunluo" remote="statix" revision="udc" />
+    <project path="device/xiaomi/yunluo-kernel" name="android_device_xiaomi_yunluo-kernel" remote="statix" revision="udc" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="statix" revision="udc" />
+
+    <!-- Hardware -->
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="statix" revision="udc" />
+
+    <!-- Vendor -->
+    <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="udc-qpr3-tablet" clone-depth="1" />
+    <project path="vendor/hardware/xiaomi" name="android_vendor_hardware_xiaomi" remote="statix" revision="udc" />
+    <project path="vendor/statix/build/target/product/security" name=".keys" remote="priv" />
+    <project path="vendor/xiaomi/yunluo" name="pranayadmn/yunluo-vendor" remote="gitea" revision="udc" />
+</manifest>
